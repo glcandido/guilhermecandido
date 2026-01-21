@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guilherme Cândido | Data Analyst Portfolio</title>
+  <style>
+    :root { --max: 980px; --fg:#111; --muted:#555; --line:#e8e8e8; }
+    body { margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial; color:var(--fg); background:#fff; }
+    .wrap { max-width:var(--max); margin:0 auto; padding:40px 18px; }
+    header { display:flex; gap:18px; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; }
+    h1 { margin:0; font-size:32px; letter-spacing:-0.02em; }
+    .tag { color:var(--muted); margin-top:6px; }
+    .links a { display:inline-block; margin-right:10px; padding:8px 12px; border:1px solid var(--line); border-radius:10px; text-decoration:none; color:var(--fg); }
+    .links a:hover { background:#f7f7f7; }
+    section { margin-top:34px; }
+    h2 { font-size:18px; margin:0 0 10px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
+    .card { border:1px solid var(--line); border-radius:14px; padding:16px; }
+    .card h3 { margin:0 0 8px; font-size:16px; }
+    .meta { color:var(--muted); font-size:14px; margin:0 0 10px; }
+    .card p { margin:0 0 12px; }
+    .card a { text-decoration:none; }
+    .pill { display:inline-block; font-size:12px; border:1px solid var(--line); border-radius:999px; padding:4px 10px; margin-right:6px; color:var(--muted); }
+    footer { margin-top:40px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Guilherme Cândido</h1>
+        <div class="tag">Aspiring Data Analyst | SQL • Tableau • Excel • Data Cleaning • Dashboards</div>
+      </div>
+      <div class="links">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://public.tableau.com/" target="_blank" rel="noreferrer">Tableau Public</a>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#" target="_blank" rel="noreferrer">CV (PDF)</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Olist E-commerce Growth & Retention Analytics</h3>
+          <div class="meta">MySQL → Clean Tables → Marts → Tableau Dashboards</div>
+          <div>
+            <span class="pill">SQL</span>
+            <span class="pill">Tableau</span>
+            <span class="pill">Data Cleaning</span>
+            <span class="pill">KPIs</span>
+          </div>
+          <p>
+            End-to-end analysis of revenue (GMV proxy), orders, customer growth, repeat share, and category/product performance.
+            Includes interactive dashboards and documented SQL pipeline.
+          </p>
+          <p>
+            <a href="#" target="_blank" rel="noreferrer">Live Dashboard</a>
+            &nbsp;•&nbsp;
+            <a href="#" target="_blank" rel="noreferrer">GitHub Repo</a>
+            &nbsp;•&nbsp;
+            <a href="#" target="_blank" rel="noreferrer">Project Write-up</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I build clean, business-facing analytics from messy operational data—profiling, cleaning, modeling, and presenting insights
+        through dashboards. Based in Ireland and open to junior data analyst / business analyst roles.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    </section>
+
+    <footer>
+      Built with GitHub Pages. Last updated: <span id="d"></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("d").textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
